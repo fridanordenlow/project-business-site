@@ -3,28 +3,47 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business Site</title>
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Crafters' Cottage</title>
     <!-- dont forget to add a css file and link it here! -->
   </head>
+  
   <body>
-    <!-- video or image as a header is cool :) -->
+  <!-- video or image as a header is cool :) -->
+    <header>
+      <video width="100%" autoplay muted loop playsinline class="header-video">
+        <source src="header-video.mp4" type="video/mp4">
+      </video>
+        <h1>Crafters' Cottage</h1>
+    </header>
+
+    
 
     <!-- Signup form -->
-
+      <form action="http://httpbin.org/anything" method="post">
+      <label for="username">Username</label>
+       <input id="username" name="username" type="text" required> 
+      <label for="password">Password</label>
+        <input id="password" name="password" type="password" required minlength="8">
+      <button name="submit" type="submit">Register</button>
+      </form>
+   
     <section class="accordion">
       <!-- Accordion -->
       <h1>FAQ</h1>
 
-      <div class="question" id="section1">Section 1</div>
+      <div class="question" id="section1">Question 1</div>
       <div class="answer">
         <p>Lorem ipsum...</p>
       </div>
 
-      <div class="question" id="section2">Section 2</div>
+      <div class="question" id="section2">Question 2</div>
       <div class="answer">
         <p>Lorem ipsum...</p>
       </div>
     </section>
     <!-- dont forget to link the javascript file here! -->
+    <script src="script.js"></script>
   </body>
 </html>

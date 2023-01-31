@@ -1,7 +1,45 @@
+#section1 {
+  display: block;
+  background-color: brown;
+  text-align: center;
+  height: 15px;
+  width: 100px;
+}
+
+#section2 {
+  display: block;
+  background-color: rgb(148, 85, 85);
+  text-align: center;
+  height: 15px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+p {
+  display: none;
+}
+
+ label {
+  display: block;
+  margin-top: 10px;
+ }
+
+ button {
+  display: block;
+  margin-top: 10px;
+ }
+
+
 /* the + sign is used to select the sibling that comes immediately next to the element you selected.
 in this case it is the div with the answer class next to the div with the active class.
 this can be used for the FAQ-accordion. read more here: https://www.w3schools.com/css/css_combinators.asp */
 
+
 .active + .answer {
+  display: block;
+
   /* some styling here */
 }
+.open + s {
+  visibility: visible; 
+ }
