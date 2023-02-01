@@ -1,45 +1,117 @@
-#section1 {
+
+.overlay-text {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 100px;
+  color: #fff;
+  padding: 0% 15%;
+  z-index: 0;
+  /*display: flex;*/
+  
+  /*text-shadow: 5px 5px black;*/
+  text-shadow: rgb(8, 8, 8) 2px 0 10px;
+}
+
+video {
+  width: 100%;
+  z-index: -1;
+  height: 300px;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: comfortaa;
+  text-align: center;
+  font-size: xxx-large;  
+}
+
+.container {
+  /*border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 350px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signupform{
+  /*display: flex;*/
+  border-radius: 10px;
+  padding: 10px 20px 30px 20px;
+  margin: 20px;
+  margin-top: 50px;
+  min-width: 175px;
+  width: 25%;
+  background-color: #c3b6d8;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-family: raleway;
+}
+
+label {
+  font-family: raleway;
   display: block;
-  background-color: brown;
+  margin-top: 10px;
+ } 
+
+button {
+  border-radius: 5px;
+  font-family: raleway;
+  display: block;
+  margin-top: 20px;
+ }
+
+h2 {
+  font-family: raleway;
+  text-align: center;
+}
+
+.accordion {
+  background-color: #c3b6d8;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  min-width: 175px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#section1 {
+  font-family: raleway;
+  font-weight: bold;
+  display: block;
   text-align: center;
   height: 15px;
   width: 100px;
 }
 
 #section2 {
+  font-family: raleway;
+  font-weight: bold;
   display: block;
-  background-color: rgb(148, 85, 85);
   text-align: center;
   height: 15px;
   width: 100px;
   margin-top: 10px;
 }
 
-p {
+.answer {
   display: none;
-}
-
- label {
-  display: block;
-  margin-top: 10px;
  }
 
- button {
+.active + .answer {
   display: block;
-  margin-top: 10px;
  }
-
 
 /* the + sign is used to select the sibling that comes immediately next to the element you selected.
 in this case it is the div with the answer class next to the div with the active class.
 this can be used for the FAQ-accordion. read more here: https://www.w3schools.com/css/css_combinators.asp */
-
-
-.active + .answer {
-  display: block;
-
-  /* some styling here */
-}
-.open + s {
-  visibility: visible; 
- }
